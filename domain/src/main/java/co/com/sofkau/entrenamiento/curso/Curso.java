@@ -56,4 +56,7 @@ public class Curso extends AggregateEvent<CursoId> {
     public Coach coach(){
         return coach;
     }
+
+    public void agregarDirectrizMentoria(MentoriaId mentoriaId, Directiz directiz) {
+    }
 }
