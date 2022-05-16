@@ -18,7 +18,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
-import static org.mockito.Mockito.when;
+
 @ExtendWith(MockitoExtension.class)
 public class AgregarDirectrizMentoriaUseCaseTest {
 
@@ -34,7 +34,7 @@ public class AgregarDirectrizMentoriaUseCaseTest {
         MentoriaId mentoriaId = MentoriaId.of("M001");
         Directiz directiz = new Directiz("Directriz de Mentoria");
         var command = new AgregarDirectrizMentoria(cursoId, mentoriaId, directiz);
-        
+
         }
         //act
         private List<DomainEvent> history(){
